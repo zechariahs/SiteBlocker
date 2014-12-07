@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!--
+
+The MIT License (MIT)
+
+Copyright (c) 2014 Zechariah W. Schwenk
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-->
+
+<html>
+	<head>
+		<title>Site Blocker</title>
+	</head>
+	
+	<body class="">
+		
+		<center>
+		
+			<div style="width:50%;">
+				
+				<div style="font-size:16pt; font-weight:900; font-family:Arial;">
+					Site Blocker
+				</div>
+				
+				<div>&nbsp;</div>
+				
+				<div style="padding-bottom:5px; text-align:left; font-family:Arial;">
+					
+					<p>
+						Some websites, such as CNN, load content from external web sites such as Facebook or Twitter.  This can cause your corporate proxy or web filter
+						to raise messages saying that the content is blocked.  In many cases these messages are annoying.  This plug-in prevents these websites from
+						loading content from the websites you identify thus preventing those annoying messages.  <u>This plug-in does not enable to get around your corporate
+						proxy or web filter</u>.
+					</p>
+					
+					<p>
+						If you have questions, feedback or enhancement requests please direct them to 
+						<a href="mailto:zechariahs+siteblocker@gmail.com?subject=Regarding%20Site%20Blocker">zechariahs+siteblocker@gmail.com</a>.
+					</p>
+					
+				</div>
+				
+				<div style="font-size:12pt; font-weight:900; font-family:Arial; text-decoration:underline;">Options</div>
+				
+				<div id="status" style="align:center;width:100%;background-color:#FF0000;color:#FFFFFF;font-weight:900;font-family:Arial;font-size:10pt;"></div>
+				
+				<div style="padding-bottom:5px; text-align:left; font-family:Arial;">
+					<p>
+						List all of the sites you want to block into the field below.  One site per line.  The 
+						list can be as specific as <b>http://facebook.com</b> or as broad as <b>facebook</b>.  Changes take effect immediately.
+					</p>
+				</div>
+				
+				<div style="float:left;padding-right:5px;padding-top:5px; font-family:Arial;font-weight:900;font-size:10pt;">
+					Blocked Sites:<br/>
+				</div>
+				
+				<div style="padding-top:5px;">
+					<textarea rows="10" cols="100" id="blockedSites"></textarea>
+				</div>
+				
+				<div style="width:100%;align:center;padding:5px;font-family:Arial; padding:5px;">
+					<center><button id="save" style="">Save</button></center>
+				</div>
+			
+			</div>
+		
+		</center>
+
+		<script src="options.js"></script>
+
+	</body>
+
+	</html>
